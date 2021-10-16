@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>shopping cart | challenge</title>
+</head>
+<!-- #EAE8E8 form bgcolor -->
+
+<body>
+    <style>
+        main {
+            background-color: #D0C7FC;
+        }
+
+        .shopping-cart-list {
+            border-radius: 12px 0px 0px 12px;
+
+        }
+
+        .checkout {
+            background-color: #EAE8E8;
+            width: 28%;
+            border-radius: 0 12px 12px 0;
+        }
+
+        .btn-black {
+            background-color: #111112;
+            border-color: #111112;
+        }
+        .btn-black:hover {
+            background-color:#111112d6;
+            border-color: #111112;
+        }
+        
+    </style>
+    <main class="container border mt-5 p-4">
+        <section class="shopping-cart d-flex mx-auto">
+            <!-- Shopping cart  -->
+            <article class="shopping-cart-list flex-grow-1 p-5 bg-white ">
+                <!-- the parent of h1 and input search  -->
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="text-capitalize">shopping cart</h1>
+                    <div class="input-group w-25">
+
+                        <input type="text" class="form-control" placeholder="Filter By Title" />
+                        <div class="input-group-text">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+                <hr color="#868A93" />
+                <!-- body of the shopping cart -->
+                <ul class="list-group list-group-flush">
+                    <!-- shopping cart item  -->
+                    <li class="list-group-item d-flex align-items-center justify-content-between p-0 mb-2 pb-3 pt-3">
+                        <!-- left part  -->
+                        <div class="d-flex align-items-center">
+                            <img src="https://media.sivasdescalzo.com/media/catalog/product/M/S/MS21-TS-001-CLU_sivasdescalzo-Casablanca-Tennis_Club_Icon_Screen_Printed_Tshirt-1619171837-1.jpg?quality=90&fit=bounds&width=420"
+                                alt="tshirt" width="90" height="90" />
+                            <p class="m-2">
+                                <span style="color:#868A93">Shirt</span>
+                                <br>
+                                <span>Cotton-T-shirt</span>
+
+                            </p>
+                        </div>
+                        <!-- middle part manage quantity -->
+                        <div class="d-flex justify-content-center align-items-center" style="width: fit-content;">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <input type="number" class="form-control w-25 text-center m-1" value="0" />
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                        </div>
+                        <!-- price part  -->
+                        <p class="m-0">$ 44.00</p>
+                        <!-- delete button -->
+                        <button class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </li>
+                    <!-- shopping cart item  -->
+                    <li class="list-group-item d-flex align-items-center justify-content-between p-0 mb-2 pb-3 pt-3">
+                        <!-- left part  -->
+                        <div class="d-flex align-items-center">
+                            <img src="https://media.sivasdescalzo.com/media/catalog/product/M/S/MS21-TS-001-CLU_sivasdescalzo-Casablanca-Tennis_Club_Icon_Screen_Printed_Tshirt-1619171837-1.jpg?quality=90&fit=bounds&width=420"
+                                alt="tshirt" width="90" height="90" />
+                            <p class="m-2">
+                                <span style="color:#868A93">Shirt</span>
+                                <br>
+                                <span>Cotton-T-shirt</span>
+
+                            </p>
+                        </div>
+                        <!-- middle part manage quantity -->
+                        <div class="d-flex justify-content-center" style="width: fit-content;">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <input type="number" class="form-control w-25 text-center" value="0" />
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                        </div>
+                        <!-- price part  -->
+                        <p class="m-0">$ 44.00</p>
+                        <!-- delete button -->
+                        <button class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </li>
+                    <!-- shopping cart item  -->
+                    <li class="list-group-item d-flex align-items-center justify-content-between p-0 mb-2 pb-3 pt-3">
+                        <!-- left part  -->
+                        <div class="d-flex align-items-center">
+                            <img src="https://media.sivasdescalzo.com/media/catalog/product/M/S/MS21-TS-001-CLU_sivasdescalzo-Casablanca-Tennis_Club_Icon_Screen_Printed_Tshirt-1619171837-1.jpg?quality=90&fit=bounds&width=420"
+                                alt="tshirt" width="90" height="90" />
+                            <p class="m-2">
+                                <span style="color:#868A93">Shirt</span>
+                                <br>
+                                <span>Cotton-T-shirt</span>
+
+                            </p>
+                        </div>
+                        <!-- middle part manage quantity -->
+                        <div class="d-flex justify-content-center" style="width: fit-content;">
+                            <button type="button" class="btn btn-outline-primary">-</button>
+                            <input type="number" class="form-control w-25 text-center" value="0" />
+                            <button type="button" class="btn btn-outline-primary">+</button>
+                        </div>
+                        <!-- price part  -->
+                        <p class="m-0">$ 44.00</p>
+                        <!-- delete button -->
+                        <button class="btn btn-danger">
+                            <i class="fas fa-trash-alt"></i>
+                        </button>
+                    </li>
+                </ul>
+            </article>
+            <!-- Summary -->
+            <article class="checkout p-5">
+                <h4 class="p-2 text-secondary">Summary</h4>
+                <hr color="#868A93" />
+                <p class="d-flex justify-content-between fw-bold fs-5 text-secondary p-2">
+                    <span>
+                        ITEMS 3
+                    </span>
+                    <span>$132.00</span>
+                </p>
+                <!-- shipping part  -->
+                <h5 class="text-secondary text-uppercase p-2">shipping</h5>
+                <select class="form-select mb-3">
+                    <option selected>Standart Delivery 5$</option>
+                    <option value="1">Casa 10$</option>
+                    <option value="2">Rabat 20$</option>
+                </select>
+                <!-- coupon part  -->
+                <h5 class="text-secondary text-uppercase p-2">Coupon code</h5>
+               <input type="text" placeholder="ex: 42435FD " class="form-control"/>
+                <hr color="#868A93" />
+                <!-- total price -->
+                <p class="d-flex justify-content-between fw-bold fs-5 text-secondary p-2">
+                    <span class="text-uppercase fs-5">
+                        total price
+                    </span>
+                    <span>$132.00</span>
+                </p>
+                <!-- register button -->
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary text-uppercase btn-black" type="button">
+                        register
+                    </button>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
